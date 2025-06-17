@@ -65,4 +65,4 @@ FTU vs Non FTU Classification
 
 #### 📈 Training vs Validation Loss Plot
 
-![Loss Plot](Images/train%20Val%20loss.png)
+![Loss Plot](Images/train_Val_loss.png)
