@@ -2,7 +2,7 @@
 
 This project focuses on building a deep learning-based classification pipeline for scintigraphic DICOM images of horse joints. It consists of two main modules:
 
-1. **Binary Classification**: Distinguishing Functionally Targeted Uptake (FTU) vs Non-FTU regions.
+1. **Binary Classification**: Distinguishing FTU(Orgin of the suspensory ligament) vs Non-FTU regions.
 2. **Multi-Class Classification**: Labeling FTU regions into 10 anatomical classes.
 
 
@@ -10,7 +10,7 @@ This project focuses on building a deep learning-based classification pipeline f
 
 ## 📌 Step 1: FTU vs Non-FTU Classification
 
-This module implements a CNN-based binary classification system to detect **FTU (Functionally Targeted Uptake - Leg joint region)** versus **Non-FTU** regions in scintigraphic images.
+This module implements a CNN-based binary classification system to detect **FTU (orgin of the suspensory ligament)** versus **Non-FTU** regions in scintigraphic images.
 
 ---
 
