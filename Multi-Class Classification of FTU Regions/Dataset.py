@@ -64,7 +64,6 @@ class FTU10ClassDataset(Dataset):
 
         except Exception as e:
             print(f"❌ Skipped file: {os.path.basename(path)} — {e}")
-            self.skipped_files.append(path)
             return self.__getitem__((index + 1) % len(self.image_paths))
 
 # === FUNCTION TO CREATE DATALOADERS ===
