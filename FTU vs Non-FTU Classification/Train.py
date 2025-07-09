@@ -6,12 +6,16 @@ import time
 from Dataset import create_dataloaders
 from Model import FTUCNN
 import matplotlib.pyplot as plt
+from Dataset import set_seed
+
+# Set seed
+set_seed(42)
 
 # Set device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Set dataset path
-dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs testing\FTU & Non FTU classification\FTU_NONFTU_Dataset"
+dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Dataset\FTU_NONFTU_Dataset"
 ftu_dir = os.path.join(dataset_path, "FTU")
 nonftu_dir = os.path.join(dataset_path, "NonFTU")
 

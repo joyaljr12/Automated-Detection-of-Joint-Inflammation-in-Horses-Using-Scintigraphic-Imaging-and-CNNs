@@ -103,5 +103,5 @@ def create_10class_dataloaders(ftu_grouped_dir, batch_size=64):
 
 # === TEST RUN ===
 if __name__ == "__main__":
-    ftu_dir = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs testing\Labelled image Classification\Grouped Ftu Dataset"
+    ftu_dir = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Dataset\Grouped Ftu test"
     create_10class_dataloaders(ftu_dir)

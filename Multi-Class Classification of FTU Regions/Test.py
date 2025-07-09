@@ -3,19 +3,23 @@ import torch
 import torch.nn as nn
 from Dataset import create_10class_dataloaders
 from Model import FTUCNNMulticlass
+from Dataset import set_seed
+
+# Set seed
+set_seed(42)
 
 # Set device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # === Set dataset path ===
-dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs testing\Labelled image Classification\Grouped Ftu Dataset"
+dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Dataset\Grouped Ftu test"
 
 # === Load data ===
 _, _, test_loader, class_names = create_10class_dataloaders(dataset_path, batch_size=32)
 
 # === Initialize and load model ===
 model = FTUCNNMulticlass().to(device)
-model.load_state_dict(torch.load(r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs testing\Labelled image Classification\Training Model\model_res18.pth", map_location=device))
+model.load_state_dict(torch.load(r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Multi-Class Classification of FTU Regions\model_res18_2.pth", map_location=device))
 model.eval()
 
 # === Loss function ===

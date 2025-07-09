@@ -6,13 +6,17 @@ import time
 from Dataset import create_10class_dataloaders
 from Model import FTUCNNMulticlass
 import matplotlib.pyplot as plt
+from Dataset import set_seed
+
+# Set seed
+set_seed(42)
 
 
 # Set device
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 # Dataset path (update as needed)
-dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs testing\Labelled image Classification\Grouped Ftu Dataset"
+dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Dataset\Grouped Ftu test"
 
 # Load data with new split
 train_loader, val_loader, test_loader, class_names = create_10class_dataloaders(dataset_path, batch_size=32)
@@ -56,7 +60,7 @@ def evaluate_accuracy(loader):
 # === Save model ===
 def save_model(model):
     current_dir = os.path.dirname(os.path.abspath(__file__))  
-    model_path = os.path.join(current_dir, "model_res18.pth")
+    model_path = os.path.join(current_dir, "model_res18_2.pth")
     torch.save(model.state_dict(), model_path)
     print(f"✅ Model saved to {model_path}")
 

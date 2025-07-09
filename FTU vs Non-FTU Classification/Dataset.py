@@ -126,7 +126,7 @@ def create_dataloaders(ftu_dir, nonftu_dir, batch_size=64):
 
 # === TESTING ===
 if __name__ == "__main__":
-    dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\FTU & Non FTU classification\FTU_NONFTU_Dataset"
+    dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Dataset\FTU_NONFTU_Dataset"
     ftu_dir = os.path.join(dataset_path, "FTU")
     nonftu_dir = os.path.join(dataset_path, "NonFTU")
     train_loader, val_loader, test_loader = create_dataloaders(ftu_dir, nonftu_dir, batch_size=64)

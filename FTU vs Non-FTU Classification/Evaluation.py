@@ -10,7 +10,7 @@ num_classes = len(class_names)
 def evaluate_model():
     
     # Get predictions & true labels from test_model()
-    all_labels, all_predictions = test_model()
+    all_labels, all_predictions, _ = test_model()
 
     # Generate confusion matrix
     conf_matrix = confusion_matrix(all_labels, all_predictions, labels= np.arange(num_classes))
