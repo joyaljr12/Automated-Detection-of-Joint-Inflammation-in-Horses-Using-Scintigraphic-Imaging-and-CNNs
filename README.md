@@ -22,7 +22,7 @@ FTU vs Non FTU Classification
 - `Train.py` – Script for training the model
 - `Test.py` – Script for running inference on test data
 - `Evaluation.py` – Generates classification report and confusion matrix
-- `model_FTU_nonftu.pth` – Saved trained model
+
 
 ---
 
@@ -41,20 +41,15 @@ FTU vs Non FTU Classification
 
 ---
 
-## 🧪 Results (Updated)
+## 🧪 Results
 
 ### ✅ Classification Report
-- **Validation Accuracy:** `98.54%`
-- **FTU Recall (Sensitivity):** `96.32%`
+- **Test Accuracy:** `98.77%`
+- **FTU Recall (Sensitivity):** `97.89%`
 - **Non-FTU Specificity:** `98.92%`
 - **FTU Precision:** `94%`
-- **Non-FTU Precision:** `99%`
+- **Non-FTU Precision:** `100%`
 
-| Class     | Precision | Recall | F1-score | Support |
-|-----------|-----------|--------|----------|---------|
-| Non-FTU   | 0.99      | 0.99   | 0.99     | 1115    |
-| FTU       | 0.94      | 0.96   | 0.95     | 190     |
-| **Accuracy** |         |        | **0.99** | **1305** |
 
 #### 📉 Confusion Matrix
 
@@ -83,7 +78,7 @@ This module classifies FTU regions into 10 anatomical labels using a fine-tuned 
 - `Train.py` – Model training pipeline
 - `Test.py` – Model evaluation script
 - `Evaluate.py` – Classification report with sensitivity & specificity
-- `model_res18.pth` – Trained multi-class model
+
 
 ---
 
@@ -109,8 +104,8 @@ This module classifies FTU regions into 10 anatomical labels using a fine-tuned 
 ### ✅ Final Metrics
 - **Train Accuracy:** 99.59%
 - **Validation Accuracy:** 96.20%
-- **Test Accuracy:** 98.37%
-- **Test Loss:** 0.0858
+- **Test Accuracy:** 98.91%
+- **Test Loss:** 0.0903
 
 #### 📉 Confusion Matrix
 ![Multiclass Confusion Matrix](Images/Multiclass%20CM.png)
