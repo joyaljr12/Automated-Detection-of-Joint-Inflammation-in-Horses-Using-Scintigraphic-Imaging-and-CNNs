@@ -79,7 +79,6 @@ This module classifies FTU regions into 10 anatomical labels using a fine-tuned 
 - `Test.py` – Model evaluation script
 - `Evaluate.py` – Classification report with sensitivity & specificity
 
-
 ---
 
 ## 🧠 Model Details (ResNet18)
