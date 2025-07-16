@@ -44,10 +44,10 @@ FTU vs Non FTU Classification
 ## 🧪 Results
 
 ### ✅ Classification Report
-- **Test Accuracy:** `98.77%`
-- **FTU Recall (Sensitivity):** `97.89%`
-- **Non-FTU Specificity:** `98.92%`
-- **FTU Precision:** `94%`
+- **Test Accuracy:** `99.33%`
+- **FTU Recall (Sensitivity):** `98.50%`
+- **Non-FTU Specificity:** `99.47%`
+- **FTU Precision:** `97%`
 - **Non-FTU Precision:** `100%`
 
 

@@ -95,7 +95,7 @@ def load_paths_by_case(ftu_dir, nonftu_dir):
 def create_dataloaders(ftu_dir, nonftu_dir, batch_size=64):
     set_seed(42)
     case_dict = load_paths_by_case(ftu_dir, nonftu_dir)
-    cases = list(case_dict.keys())
+    cases = sorted(case_dict.keys())
 
     train_cases, temp_cases = train_test_split(cases, test_size=0.2, random_state=42)
     val_cases, test_cases = train_test_split(temp_cases, test_size=0.5, random_state=42)
@@ -126,7 +126,7 @@ def create_dataloaders(ftu_dir, nonftu_dir, batch_size=64):
 
 # === TESTING ===
 if __name__ == "__main__":
-    dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\Dataset\FTU_NONFTU_Dataset"
+    dataset_path = r"D:\Master Thesis\Automated Detection of Joint Inflammation in Horses Using Scintigraphic Imaging and CNNs\FTU vs Non-FTU Classification\FTU_NONFTU_Dataset"
     ftu_dir = os.path.join(dataset_path, "FTU")
     nonftu_dir = os.path.join(dataset_path, "NonFTU")
     train_loader, val_loader, test_loader = create_dataloaders(ftu_dir, nonftu_dir, batch_size=64)
