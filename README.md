@@ -39,6 +39,7 @@ FTU vs Non FTU Classification
 | Regularization  | BatchNorm + Weight Decay (0.0001)                  |
 | Augmentations   | FTU: Contrast jitter + rotation<br>Non-FTU: None   |
 
+
 ---
 
 ## 🧪 Results
