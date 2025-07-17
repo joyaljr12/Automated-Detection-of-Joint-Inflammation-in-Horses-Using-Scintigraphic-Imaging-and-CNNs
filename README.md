@@ -58,11 +58,11 @@ FTU vs Non FTU Classification
 
 #### 📋 Classification Report Screenshot
 
-![Classification Report](Images\FTU_classification_report.png)
+![Classification Report](Images/FTU_classification_report.png)
 
 #### 📈 Training vs Validation Loss Plot
 
-![Loss Plot](Images\train_val_loss.png)
+![Loss Plot](Images/train_val_loss.png)
 
 
 ## 📌 Step 2: 10-Class FTU Region Classification
