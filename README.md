@@ -54,15 +54,15 @@ FTU vs Non FTU Classification
 
 #### 📉 Confusion Matrix
 
-![Confusion Matrix](Images/FTU%20classification(cm).png)
+![Confusion Matrix](Images\FTUclassification(cm).png) 
 
 #### 📋 Classification Report Screenshot
 
-![Classification Report](Images/FTU%20classification%20report.png)
+![Classification Report](Images\FTU_classification_report.png)
 
 #### 📈 Training vs Validation Loss Plot
 
-![Loss Plot](Images/train_Val_loss.png)
+![Loss Plot](Images\train_val_loss.png)
 
 
 ## 📌 Step 2: 10-Class FTU Region Classification
@@ -82,7 +82,7 @@ This module classifies FTU regions into 10 anatomical labels using a fine-tuned 
 
 ---
 
-## 🧠 Model Details (ResNet18)
+## 🧠 Model Details (ResNet18) pre
 
 | Component       | Description                                       |
 |----------------|---------------------------------------------------|
