@@ -54,7 +54,7 @@ FTU vs Non FTU Classification
 
 #### 📉 Confusion Matrix
 
-![Confusion Matrix](Images\FTUclassification(cm).png) 
+![Confusion Matrix](Images/FTUclassification(cm).png) 
 
 #### 📋 Classification Report Screenshot
 
